@@ -92,13 +92,23 @@ body{
     animation: slideLeft 1s ease forwards;
     animation-delay: 2s;
 }
-.home-img img{
-    max-width: 450px;
-    margin-right: -20px;
-    opacity: 0;
-    animation: zoomIn 1s ease forwards;
-    animation-delay: 1s;
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.home-img img {
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Ensure equal width and height */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    border: 5px solid white; /* Optional: Adds a white border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+
+
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -183,3 +193,80 @@ body{
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #ff7f50;
+}
+
+/* Content Section */
+.content {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 45px;
+    color: #ff7f50;
+    margin-bottom: 20px;
+}
+
+.content p, .content ul {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+
