@@ -6,9 +6,9 @@
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
 </head>
 <body>
+
     <header class="header">
         <a href="index.html" class="logo">Portfolio</a>
         <nav class="navbar">
@@ -19,22 +19,33 @@
         </nav>
     </header>
 
-    <section class="content">
-        <h1>Get In Touch</h1>
-        <p>If you’d like to **collaborate on a project, discuss ideas, or just say hello**, feel free to reach out! 🚀</p>
+    <section class="contact-container">
+        <div class="contact-info">
+            <h1>Get In Touch</h1>
+            <p>Let's **collaborate on a project, discuss ideas, or just say hello!** Feel free to reach out. 🚀</p>
 
-        <h2>Contact Details</h2>
-        <p><strong>Email:</strong> anshumashu2002@gmail.com</p>
-        <p><strong>Phone:</strong> 8252587109</p>
+            <h2>Contact Details</h2>
+            <p><i class="bx bx-envelope"></i> <strong>Email:</strong> anshumashu2002@gmail.com</p>
+            <p><i class="bx bx-phone"></i> <strong>Phone:</strong> 8252587109</p>
 
-        <h2>Let's Connect</h2>
-        <p>Find me on:</p>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/anshum-a-079b9825a" target="_blank">
-                <i class="bx bxl-linkedin"></i>
-            </a>
+            <h2>Let's Connect</h2>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/anshum-a-079b9825a" target="_blank" class="social-btn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank" class="social-btn"><i class="bx bxl-github"></i></a>
+                <a href="mailto:anshumashu2002@gmail.com" class="social-btn"><i class="bx bx-envelope"></i></a>
+            </div>
         </div>
-        
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="mailto:anshumashu2002@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
+
 </body>
 </html>
